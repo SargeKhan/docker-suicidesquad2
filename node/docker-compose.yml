@@ -1,0 +1,10 @@
+version: '2'
+services: 
+    node: 
+        build: . 
+        links: 
+            - supervisor
+
+    supervisor:
+        build: ../supervisor
+
