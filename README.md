@@ -13,3 +13,4 @@ sudo docker stop <container_id>
 # to see if all the other node containers are alive or dead run the following command or look at the output of ./run_cluster
 sudo docker ps
 ````
+#### This solution will not work for docker kill <container_id> since it doesn't allow the processes in the container to stop gracefully. 
