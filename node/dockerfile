@@ -18,7 +18,7 @@ RUN mkdir /home/server
 ADD . /home/client/
 # Change directory 
 WORKDIR "/home/client/"
-# expose port 3000 for this image
-EXPOSE 3000 
+# expose port 3000 for http app
+EXPOSE 3000
 # start application
 ENTRYPOINT ["node", "socket_client.js"]

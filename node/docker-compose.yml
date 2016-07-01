@@ -2,9 +2,10 @@ version: '2'
 services: 
     node: 
         build: . 
+        ports:
+            - "3000"
         links: 
             - supervisor
-
     supervisor:
         build: ../supervisor
 

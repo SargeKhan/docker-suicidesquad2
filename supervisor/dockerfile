@@ -19,6 +19,6 @@ ADD . /home/server/
 # Change directory 
 WORKDIR "/home/server/"
 # expose port 3000 for this image
-EXPOSE 3000 
+EXPOSE 8000 
 # start application
 ENTRYPOINT ["node", "app.js"]

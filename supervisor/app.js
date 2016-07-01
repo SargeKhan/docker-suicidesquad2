@@ -1,8 +1,7 @@
-var io = require('socket.io')(3000);
+var io = require('socket.io')(8000);
 console.log("Starting server docker");
 
 io.on('connection', function (socket) {
-  socket.send('hi');
   socket.on('message', function (message) {
     if(message == 'DIE?')
       io.emit('message', 'DIE');
